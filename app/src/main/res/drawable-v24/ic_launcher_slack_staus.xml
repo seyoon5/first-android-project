@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:width="30dp"
+        android:height="30dp"
+        android:drawable="@drawable/iconfinder_happy_smile"
+        >
+        <shape android:shape="rectangle">
+            <stroke android:width="3dp"
+                android:color="@color/white">
+
+            </stroke>
+            <corners android:radius="20dp">
+
+            </corners>
+        </shape>
+    </item>
+
+</layer-list>

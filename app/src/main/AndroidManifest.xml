@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.test" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature android:name="android.hardware.camera2" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:name="androidx.multidex.MultiDexApplication"
+        android:allowBackup="false"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Test" >
+        <activity android:name=".MainActivity" >
+        </activity>
+        <activity android:name=".SearchHome" />
+        <activity android:name=".AppMain" />
+        <activity android:name=".Profile" />
+        <activity android:name=".SpotDetail_Edit" />
+        <activity android:name=".EditSpot" />
+        <activity android:name=".SpotDetail_Add" />
+        <activity android:name=".Rating" />
+        <activity android:name=".AddSpot" />
+        <activity android:name=".SpotDetail" />
+        <activity android:name=".ProfileEdit" />
+        <activity android:name=".Search" />
+        <activity android:name=".Video" />
+        <activity android:name=".VideoPlay" />
+        <activity android:name=".RecordSpot" />
+        <activity android:name=".YouTube.MainActivity" />
+        <activity android:name=".Start" />
+        <activity android:name=".rating.MainActivity" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".ThreadLoading" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".YouTube.UtubePlay" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDYufsiNLHl7RGRBdZJP3nrYQMqMr_Upow" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.test"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

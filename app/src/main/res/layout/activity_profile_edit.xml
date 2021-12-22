@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProfileEdit">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="프로필 수정"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/button_btn_profileEditCancle"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_gravity="left"
+            android:text="취소" />
+
+        <Button
+            android:id="@+id/button_btn_profileEditOk"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:text="완료" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+
+            android:id="@+id/imageView_profileEdit_userImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/iconfinder_people_user_icon" />
+
+        <ImageView
+            android:id="@+id/imageView_profileEdit_userImageFake"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"/>
+
+        <Button
+            android:id="@+id/button_profileEdit_userImagePhotoBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView_profileEdit_userImage"
+            android:layout_toRightOf="@id/button_profileEdit_userImageCameraBtn"
+            android:text="사진"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button_profileEdit_userImageCameraBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView_profileEdit_userImage"
+            android:layout_marginLeft="115dp"
+            android:text="촬영"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_profileEdit_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="User"
+        android:textSize="30sp" />
+
+   <!-- <EditText
+        android:id="@+id/et_profileEdit_Hi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="50dp"
+        android:text="자기소개"
+        android:textSize="15sp" />-->
+</LinearLayout>
+
+
+

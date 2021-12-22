@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SpotDetail_Add">
+
+    <ImageButton
+        android:id="@+id/ib_photo_add"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="5dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/iconfinder_gallery_image" />
+
+    <EditText
+        android:id="@+id/et_content_add"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="내용" />
+
+    <Button
+        android:id="@+id/detail_AddOk"
+        android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:text="작성 완료" />
+
+</LinearLayout>

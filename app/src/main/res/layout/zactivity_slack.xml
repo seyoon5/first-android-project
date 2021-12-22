@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+   <TextView
+       android:layout_margin="10dp"
+       android:id="@+id/me"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:textColor="@color/white"
+       android:textSize="20sp"
+       android:textStyle="bold"
+       android:text="나"/>
+    <LinearLayout
+        android:background="#222222"
+        android:id="@+id/middle"
+        android:layout_below="@id/me"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_launcher_slack_user"
+            android:text="오세윤"
+android:backgroundTint="#222222"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="left"
+             />
+        <Button
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_launcher_slack_staus"
+            android:text="고객님의 상태가 어떻게 됩니까?"
+            android:backgroundTint="#222222"
+
+            android:gravity="left"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_launcher_slack_belloff"
+            android:backgroundTint="#222222"
+            android:text="알림 일시 중지"
+            android:gravity="left" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_launcher_slack_empty"
+            android:backgroundTint="#222222"
+            android:gravity="left"
+            android:text="자신을 자리 비움으로 설정"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_launcher_slack_save"
+            android:backgroundTint="#222222"
+            android:gravity="left"
+            android:text="저장된 항목"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_launcher_slack_profile"
+            android:backgroundTint="#222222"
+            android:gravity="left"
+            android:text="프로필 보기"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/alram"
+            android:backgroundTint="#222222"
+            android:gravity="left"
+            android:text="알림"/>
+        <Button
+            android:id="@+id/last"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_launcher_slack_setting"
+            android:backgroundTint="#222222"
+            android:gravity="left"
+            android:text="환경설절"/>
+    </LinearLayout>
+    <TextView
+        android:layout_below="@id/middle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#222222"/>
+
+    <LinearLayout
+        android:background="@color/dark_gray"
+android:id="@+id/bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:backgroundTint="@color/dark_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_launcher_slack_home"
+            android:text="홈"
+            android:textSize="10sp"/>
+
+        <Button
+            android:backgroundTint="@color/dark_gray"
+
+            android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_launcher_slack_dm"
+        android:text="DM"
+            android:textSize="10sp"/>
+    <Button
+        android:backgroundTint="@color/dark_gray"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_launcher_slack_mention"
+        android:text="멘션"
+        android:textSize="10sp"/>
+    <Button
+        android:backgroundTint="@color/dark_gray"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_launcher_slack_mgnifier"
+        android:text="검색"
+        android:textSize="10sp"/>
+    <Button
+        android:backgroundTint="@color/dark_gray"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_launcher_slack_me"
+        android:text="나"
+        android:textSize="10sp"/>
+    </LinearLayout>>
+</RelativeLayout>
+
+
+

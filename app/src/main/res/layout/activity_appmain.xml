@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AppMain">
+
+    <TextView
+        android:id="@+id/textView_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="와구와구"
+        android:textSize="30sp"
+        android:textColor="@color/orange"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"/>
+    <ImageButton
+        android:id="@+id/imageButton_btn_friends"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/video_youtube_icon" />
+
+    <ImageButton
+        android:id="@+id/imageButton_btn_search"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/iconfinder_magnifier" />
+
+    <fragment
+        android:layout_below="@id/imageButton_btn_friends"
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        class="com.google.android.gms.maps.SupportMapFragment" />
+   <!-- <Button
+        android:layout_toLeftOf="@id/btn_appmain_searchRestaurant"
+        android:layout_below="@id/map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onLastLocationButtonClicked"
+        android:text="현재위치"/>-->
+    <Button
+        android:layout_toLeftOf="@id/center"
+        android:layout_below="@id/map"
+        android:id="@+id/btn_appmain_searchRestaurant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="음식점"/>
+
+    <TextView
+        android:id="@+id/center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/map"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:layout_below="@id/map"
+        android:layout_toRightOf="@id/center"
+        android:id="@+id/btn_appmain_searchCafe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="카페"/>
+
+
+    <Button
+        android:id="@+id/button_btn_recordSpot"
+        android:layout_below="@id/btn_appmain_searchRestaurant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="내 기록"/>
+    <Button
+        android:id="@+id/button_btn_profile"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/btn_appmain_searchCafe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="프로필"/>
+
+
+</RelativeLayout>
+
+
+

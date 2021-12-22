@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">와구와구</string>
+    <string name="등록">등록</string>
+    <string name="삭제">삭제</string>
+    <string name="수정">수정</string>
+    <string name="youyubeAPIKey">AIzaSyD0HhKqtuUPkcJjViED8bs53FfjXKSxYRU</string>
+    <string name="err_no_selected_item">항목을 선택한 후 사용할 수 있습니다.</string>
+    <string name="google_map_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCoyDcqsUpc0eHPwWVKhS7dP1YD_fiYWdw</string>
+
+</resources>
